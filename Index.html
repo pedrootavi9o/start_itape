@@ -1,0 +1,165 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start UP Itape</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;900&display=swap');
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .font-impact {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        .btn-yellow {
+            background-color: #facc15;
+            color: #000;
+            font-weight: 900;
+            transition: 0.3s;
+        }
+
+        .btn-yellow:hover {
+            background-color: #fff;
+            transform: skewX(-10deg);
+        }
+
+        .border-brand {
+            border-left: 5px solid #facc15;
+        }
+
+        /* Animação para evitar erro de carregamento */
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            background: #facc15;
+            color: #000;
+            padding: 10px 0;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="p-4 border-b border-zinc-800 flex justify-between items-center sticky top-0 bg-black z-50">
+        <h1 class="font-impact text-2xl text-yellow-400">START UP <span class="text-white">ITAPE</span></h1>
+        <div class="text-xs font-bold uppercase space-x-4 hidden md:flex">
+            <a href="#bones" class="hover:text-yellow-400">Bonés</a>
+            <a href="#camisas" class="hover:text-yellow-400">Camisas</a>
+            <a href="#tenis" class="hover:text-yellow-400">Tênis</a>
+        </div>
+        <div class="bg-yellow-400 text-black px-3 py-1 text-xs font-black">CONTATO</div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="py-20 px-6 text-center bg-zinc-900 border-b-4 border-yellow-400">
+        <h2 class="font-impact text-5xl md:text-7xl mb-4">O KIT <span class="text-yellow-400">MAIS PESADO</span></h2>
+        <p class="text-zinc-400 mb-8 font-bold uppercase tracking-widest text-sm">Bonés Black Bird • Pixain • Tailandesas • Mizuno</p>
+        <a href="https://wa.me/seu-numero" class="btn-yellow px-10 py-4 inline-block italic">CHAMAR NO WHATSAPP</a>
+    </section>
+
+    <!-- Letreiro -->
+    <div class="marquee font-impact">
+        CAMISAS TAILANDESAS 1:1 • BONÉS BLACK BIRD • PIXAIN STREETWEAR • MIZUNO WAVE • VANS • KENNER • HAVAIANAS • CAMISAS DE TIME PRIMEIRA LINHA •
+    </div>
+
+    <main class="max-w-6xl mx-auto p-6">
+        
+        <!-- BONÉS -->
+        <section id="bones" class="mb-12">
+            <h3 class="font-impact text-3xl mb-6 border-brand pl-4">BONÉS <span class="text-yellow-400">DE MARCA</span></h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-zinc-900 p-3 rounded">
+                    <div class="bg-black aspect-square mb-2 flex items-center justify-center text-zinc-700 font-black text-center p-2 border border-zinc-800">BLACK BIRD</div>
+                    <p class="text-xs font-bold uppercase">Boné Black BIRD</p>
+                    <p class="text-yellow-400 font-black italic">R$ 119,90</p>
+                </div>
+                <div class="bg-zinc-900 p-3 rounded">
+                    <div class="bg-black aspect-square mb-2 flex items-center justify-center text-zinc-700 font-black text-center p-2 border border-zinc-800">TOM HILL</div>
+                    <p class="text-xs font-bold uppercase">Boné Tom Hill</p>
+                    <p class="text-yellow-400 font-black italic">R$ 129,90</p>
+                </div>
+                <div class="bg-zinc-900 p-3 rounded">
+                    <div class="bg-black aspect-square mb-2 flex items-center justify-center text-zinc-700 font-black text-center p-2 border border-zinc-800">NEW YORK</div>
+                    <p class="text-xs font-bold uppercase">Boné New York</p>
+                    <p class="text-yellow-400 font-black italic">R$ 99,90</p>
+                </div>
+                <div class="bg-zinc-900 p-3 rounded">
+                    <div class="bg-black aspect-square mb-2 flex items-center justify-center text-zinc-700 font-black text-center p-2 border border-zinc-800">POLO</div>
+                    <p class="text-xs font-bold uppercase">Boné Polo</p>
+                    <p class="text-yellow-400 font-black italic">R$ 89,90</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAMISAS -->
+        <section id="camisas" class="mb-12">
+            <h3 class="font-impact text-3xl mb-6 border-brand pl-4">CAMISAS <span class="text-yellow-400">DE TIME</span></h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="border-2 border-yellow-400 p-6 bg-zinc-900">
+                    <span class="bg-yellow-400 text-black px-2 py-1 text-[10px] font-black">QUALIDADE 1:1</span>
+                    <h4 class="font-impact text-2xl mt-2 italic">TAILANDESA</h4>
+                    <p class="text-zinc-500 text-sm mb-4">A melhor do mercado. Idêntica à de jogo.</p>
+                    <p class="text-white font-black">R$ 159,90</p>
+                </div>
+                <div class="border border-zinc-800 p-6 bg-zinc-900">
+                    <h4 class="font-impact text-2xl italic">PRIMEIRA LINHA</h4>
+                    <p class="text-zinc-500 text-sm mb-4">Excelente custo-benefício.</p>
+                    <p class="text-white font-black">R$ 119,90</p>
+                </div>
+                <div class="border border-zinc-800 p-6 bg-zinc-900 font-impact italic">
+                    <h4 class="text-2xl">PIXAIN</h4>
+                    <p class="text-zinc-500 text-sm font-sans mb-4">Camisas e Calças Streetwear.</p>
+                    <p class="text-yellow-400">VEJA O CATÁLOGO</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALÇADOS -->
+        <section id="tenis" class="mb-12">
+            <h3 class="font-impact text-3xl mb-6 border-brand pl-4">PISANTE <span class="text-yellow-400">& SLIDES</span></h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-zinc-900 p-4 border border-zinc-800 text-center">
+                    <p class="font-impact text-xl text-yellow-400">MIZUNO</p>
+                    <p class="text-xs uppercase text-zinc-400">Wave Prophecy</p>
+                </div>
+                <div class="bg-zinc-900 p-4 border border-zinc-800 text-center">
+                    <p class="font-impact text-xl text-yellow-400">VANS</p>
+                    <p class="text-xs uppercase text-zinc-400">Old Skool</p>
+                </div>
+                <div class="bg-zinc-900 p-4 border border-zinc-800 text-center">
+                    <p class="font-impact text-xl text-yellow-400">KENNER</p>
+                    <p class="text-xs uppercase text-zinc-400">Rakka / Kivah</p>
+                </div>
+                <div class="bg-zinc-900 p-4 border border-zinc-800 text-center">
+                    <p class="font-impact text-xl text-yellow-400">HAVAIANAS</p>
+                    <p class="text-xs uppercase text-zinc-400">Top / Brasil</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-zinc-900 p-10 text-center border-t-2 border-yellow-400">
+        <p class="font-impact text-2xl text-yellow-400 mb-4 italic">START UP ITAPE</p>
+        <p class="text-zinc-500 text-xs mb-6 uppercase tracking-widest font-bold">Itapetininga - SP | Estilo Street Original</p>
+        <div class="bg-green-600 text-white py-3 px-6 rounded font-black inline-block text-sm cursor-pointer">
+            CHAMAR NO WHATSAPP
+        </div>
+    </footer>
+
+</body>
+</html>
+
+```
